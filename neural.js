@@ -79,7 +79,7 @@ class NN{
     //correction of weight_ih
     this.weight_ih.add(weight_ih_change);
 
-    //correction of biases both ho and ih
+    //correction of biases both ho & ih
     this.bias_ho.add(gradient);
     this.bias_ih.add(gradient_ih);
 
