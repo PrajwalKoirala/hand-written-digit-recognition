@@ -67,13 +67,13 @@ let p ;
      inpt = nn.predict(inpt);
      let z = inpt.indexOf(max(inpt));
      if(max(inpt) > 0.6){
-       conf = '  High Confidience';
+       conf = ' : Recognized With High Confidience';
      }
      if(max(inpt) > 0.2 && max(inpt) <0.6){
-       conf = '  Moderate Confidience';
+       conf = ' : Recognized With Moderate Confidience';
      }
      if(max(inpt) < 0.2){
-       conf = '  Low Confidience';
+       conf = ' : Recognized With Low Confidience';
      }
      z = (z + 1)%10;
      console.log(z);
